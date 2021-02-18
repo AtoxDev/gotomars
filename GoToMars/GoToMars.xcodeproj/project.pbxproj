@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68DC90F125DC78BF00102F3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68DC90F025DC78BF00102F3F /* GoogleService-Info.plist */; };
+		68DC910125DC828900102F3F /* RocketPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC910025DC828900102F3F /* RocketPageView.swift */; };
+		68DC910625DC97E400102F3F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 68DC910525DC97E400102F3F /* Alamofire */; };
+		68DC910A25DC9B3D00102F3F /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC910925DC9B3D00102F3F /* ServiceError.swift */; };
+		68DC910E25DC9B9A00102F3F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC910D25DC9B9A00102F3F /* Service.swift */; };
+		68DC911125DC9C2500102F3F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC911025DC9C2500102F3F /* Endpoint.swift */; };
+		68DC911425DC9F0C00102F3F /* RocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC911325DC9F0C00102F3F /* RocketViewModel.swift */; };
+		68DC911725DC9F2700102F3F /* RocketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC911625DC9F2700102F3F /* RocketPresenter.swift */; };
+		68DC911A25DCA03B00102F3F /* ListRockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC911925DCA03B00102F3F /* ListRockets.swift */; };
+		68DC912325DCA21A00102F3F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 68DC912225DCA21A00102F3F /* Kingfisher */; };
+		68DC912825DCA3D300102F3F /* RocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC912725DCA3D300102F3F /* RocketModel.swift */; };
+		68DC912F25DD893900102F3F /* RocketDetailPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC912E25DD893900102F3F /* RocketDetailPresenters.swift */; };
+		68DC913325DD8CF000102F3F /* RocketDetaiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC913225DD8CF000102F3F /* RocketDetaiViewModel.swift */; };
+		68DC913625DD8DF800102F3F /* RocketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC913525DD8DF800102F3F /* RocketDetailView.swift */; };
+		68F9355E25DC3A880090D87D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F9355D25DC3A880090D87D /* AppDelegate.swift */; };
+		68F9356025DC3A880090D87D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F9355F25DC3A880090D87D /* SceneDelegate.swift */; };
+		68F9356225DC3A880090D87D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F9356125DC3A880090D87D /* ContentView.swift */; };
+		68F9356425DC3A930090D87D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F9356325DC3A930090D87D /* Assets.xcassets */; };
+		68F9356725DC3A930090D87D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F9356625DC3A930090D87D /* Preview Assets.xcassets */; };
+		68F9356A25DC3A930090D87D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F9356825DC3A930090D87D /* LaunchScreen.storyboard */; };
+		68F9358225DC3EB20090D87D /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F9357325DC3EB10090D87D /* KeyboardHandler.swift */; };
+		68F9358325DC3EB20090D87D /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F9357525DC3EB10090D87D /* LoginPageView.swift */; };
+		68F9358425DC3EB20090D87D /* RegisterPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F9357725DC3EB10090D87D /* RegisterPageView.swift */; };
+		68F9358525DC3EB20090D87D /* initPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F9357925DC3EB20090D87D /* initPageView.swift */; };
+		68F9358625DC3EB20090D87D /* ErrorLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F9357B25DC3EB20090D87D /* ErrorLogin.swift */; };
+		68F9358725DC3EB20090D87D /* ITCKabelStd-Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68F9357E25DC3EB20090D87D /* ITCKabelStd-Demi.otf */; };
+		68F9358825DC3EB20090D87D /* ITCKabelStd-Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68F9357F25DC3EB20090D87D /* ITCKabelStd-Ultra.otf */; };
+		68F9358925DC3EB20090D87D /* ITCKabelStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68F9358025DC3EB20090D87D /* ITCKabelStd-Bold.otf */; };
+		68F9358A25DC3EB20090D87D /* ITCKabelStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68F9358125DC3EB20090D87D /* ITCKabelStd-Book.otf */; };
+		CA3EF6B1841F5A314C6FEED5 /* Pods_GoToMars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29D64696AE6C911FF51A8DB /* Pods_GoToMars.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		431A4B0BA0834CD7566B3B63 /* Pods-GoToMars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoToMars.release.xcconfig"; path = "Target Support Files/Pods-GoToMars/Pods-GoToMars.release.xcconfig"; sourceTree = "<group>"; };
+		68DC90F025DC78BF00102F3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68DC910025DC828900102F3F /* RocketPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketPageView.swift; sourceTree = "<group>"; };
+		68DC910925DC9B3D00102F3F /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		68DC910D25DC9B9A00102F3F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		68DC911025DC9C2500102F3F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		68DC911325DC9F0C00102F3F /* RocketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewModel.swift; sourceTree = "<group>"; };
+		68DC911625DC9F2700102F3F /* RocketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketPresenter.swift; sourceTree = "<group>"; };
+		68DC911925DCA03B00102F3F /* ListRockets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRockets.swift; sourceTree = "<group>"; };
+		68DC912725DCA3D300102F3F /* RocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketModel.swift; sourceTree = "<group>"; };
+		68DC912E25DD893900102F3F /* RocketDetailPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailPresenters.swift; sourceTree = "<group>"; };
+		68DC913225DD8CF000102F3F /* RocketDetaiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetaiViewModel.swift; sourceTree = "<group>"; };
+		68DC913525DD8DF800102F3F /* RocketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailView.swift; sourceTree = "<group>"; };
+		68F9355A25DC3A880090D87D /* GoToMars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoToMars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F9355D25DC3A880090D87D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68F9355F25DC3A880090D87D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		68F9356125DC3A880090D87D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		68F9356325DC3A930090D87D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68F9356625DC3A930090D87D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		68F9356925DC3A930090D87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68F9356B25DC3A930090D87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68F9357325DC3EB10090D87D /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		68F9357525DC3EB10090D87D /* LoginPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
+		68F9357725DC3EB10090D87D /* RegisterPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageView.swift; sourceTree = "<group>"; };
+		68F9357925DC3EB20090D87D /* initPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = initPageView.swift; sourceTree = "<group>"; };
+		68F9357B25DC3EB20090D87D /* ErrorLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorLogin.swift; sourceTree = "<group>"; };
+		68F9357E25DC3EB20090D87D /* ITCKabelStd-Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITCKabelStd-Demi.otf"; sourceTree = "<group>"; };
+		68F9357F25DC3EB20090D87D /* ITCKabelStd-Ultra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITCKabelStd-Ultra.otf"; sourceTree = "<group>"; };
+		68F9358025DC3EB20090D87D /* ITCKabelStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITCKabelStd-Bold.otf"; sourceTree = "<group>"; };
+		68F9358125DC3EB20090D87D /* ITCKabelStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITCKabelStd-Book.otf"; sourceTree = "<group>"; };
+		B29D64696AE6C911FF51A8DB /* Pods_GoToMars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoToMars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A4AE9BBB8253A57001C96F /* Pods-GoToMars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoToMars.debug.xcconfig"; path = "Target Support Files/Pods-GoToMars/Pods-GoToMars.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68F9355725DC3A880090D87D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DC912325DCA21A00102F3F /* Kingfisher in Frameworks */,
+				CA3EF6B1841F5A314C6FEED5 /* Pods_GoToMars.framework in Frameworks */,
+				68DC910625DC97E400102F3F /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195095B760226E20A1181466 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2A4AE9BBB8253A57001C96F /* Pods-GoToMars.debug.xcconfig */,
+				431A4B0BA0834CD7566B3B63 /* Pods-GoToMars.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		68DC90FF25DC826C00102F3F /* Rockets */ = {
+			isa = PBXGroup;
+			children = (
+				68DC910025DC828900102F3F /* RocketPageView.swift */,
+				68DC911325DC9F0C00102F3F /* RocketViewModel.swift */,
+				68DC911625DC9F2700102F3F /* RocketPresenter.swift */,
+				68DC911925DCA03B00102F3F /* ListRockets.swift */,
+			);
+			path = Rockets;
+			sourceTree = "<group>";
+		};
+		68DC910825DC9B1D00102F3F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				68DC912625DCA3C100102F3F /* Models */,
+				68DC910925DC9B3D00102F3F /* ServiceError.swift */,
+				68DC910D25DC9B9A00102F3F /* Service.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		68DC912625DCA3C100102F3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				68DC912725DCA3D300102F3F /* RocketModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68DC912D25DD890900102F3F /* RocketDetails */ = {
+			isa = PBXGroup;
+			children = (
+				68DC912E25DD893900102F3F /* RocketDetailPresenters.swift */,
+				68DC913225DD8CF000102F3F /* RocketDetaiViewModel.swift */,
+				68DC913525DD8DF800102F3F /* RocketDetailView.swift */,
+			);
+			path = RocketDetails;
+			sourceTree = "<group>";
+		};
+		68F9355125DC3A880090D87D = {
+			isa = PBXGroup;
+			children = (
+				68F9355C25DC3A880090D87D /* GoToMars */,
+				68F9355B25DC3A880090D87D /* Products */,
+				195095B760226E20A1181466 /* Pods */,
+				7C0BEDC2A066AD6C1DF044D6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68F9355B25DC3A880090D87D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68F9355A25DC3A880090D87D /* GoToMars.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68F9355C25DC3A880090D87D /* GoToMars */ = {
+			isa = PBXGroup;
+			children = (
+				68DC912D25DD890900102F3F /* RocketDetails */,
+				68DC910825DC9B1D00102F3F /* Networking */,
+				68DC90FF25DC826C00102F3F /* Rockets */,
+				68F9357A25DC3EB20090D87D /* Errors */,
+				68DC90F025DC78BF00102F3F /* GoogleService-Info.plist */,
+				68F9357825DC3EB20090D87D /* initApp */,
+				68F9357425DC3EB10090D87D /* Login */,
+				68F9357625DC3EB10090D87D /* Register */,
+				68F9357C25DC3EB20090D87D /* Resources */,
+				68F9357225DC3EB10090D87D /* Utils */,
+				68F9355D25DC3A880090D87D /* AppDelegate.swift */,
+				68F9355F25DC3A880090D87D /* SceneDelegate.swift */,
+				68F9356125DC3A880090D87D /* ContentView.swift */,
+				68F9356325DC3A930090D87D /* Assets.xcassets */,
+				68F9356825DC3A930090D87D /* LaunchScreen.storyboard */,
+				68F9356B25DC3A930090D87D /* Info.plist */,
+				68F9356525DC3A930090D87D /* Preview Content */,
+				68DC911025DC9C2500102F3F /* Endpoint.swift */,
+			);
+			path = GoToMars;
+			sourceTree = "<group>";
+		};
+		68F9356525DC3A930090D87D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				68F9356625DC3A930090D87D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		68F9357225DC3EB10090D87D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				68F9357325DC3EB10090D87D /* KeyboardHandler.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		68F9357425DC3EB10090D87D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				68F9357525DC3EB10090D87D /* LoginPageView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		68F9357625DC3EB10090D87D /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				68F9357725DC3EB10090D87D /* RegisterPageView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		68F9357825DC3EB20090D87D /* initApp */ = {
+			isa = PBXGroup;
+			children = (
+				68F9357925DC3EB20090D87D /* initPageView.swift */,
+			);
+			path = initApp;
+			sourceTree = "<group>";
+		};
+		68F9357A25DC3EB20090D87D /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				68F9357B25DC3EB20090D87D /* ErrorLogin.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		68F9357C25DC3EB20090D87D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68F9357D25DC3EB20090D87D /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		68F9357D25DC3EB20090D87D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				68F9357E25DC3EB20090D87D /* ITCKabelStd-Demi.otf */,
+				68F9357F25DC3EB20090D87D /* ITCKabelStd-Ultra.otf */,
+				68F9358025DC3EB20090D87D /* ITCKabelStd-Bold.otf */,
+				68F9358125DC3EB20090D87D /* ITCKabelStd-Book.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7C0BEDC2A066AD6C1DF044D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B29D64696AE6C911FF51A8DB /* Pods_GoToMars.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68F9355925DC3A880090D87D /* GoToMars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F9356E25DC3A930090D87D /* Build configuration list for PBXNativeTarget "GoToMars" */;
+			buildPhases = (
+				D71F1F50A105E0A972E6DE78 /* [CP] Check Pods Manifest.lock */,
+				68F9355625DC3A880090D87D /* Sources */,
+				68F9355725DC3A880090D87D /* Frameworks */,
+				68F9355825DC3A880090D87D /* Resources */,
+				6F87755F2AE70CB0ADB3CE02 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoToMars;
+			packageProductDependencies = (
+				68DC910525DC97E400102F3F /* Alamofire */,
+				68DC912225DCA21A00102F3F /* Kingfisher */,
+			);
+			productName = GoToMars;
+			productReference = 68F9355A25DC3A880090D87D /* GoToMars.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68F9355225DC3A880090D87D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					68F9355925DC3A880090D87D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 68F9355525DC3A880090D87D /* Build configuration list for PBXProject "GoToMars" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68F9355125DC3A880090D87D;
+			packageReferences = (
+				68DC910425DC97E400102F3F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				68DC912125DCA21A00102F3F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 68F9355B25DC3A880090D87D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68F9355925DC3A880090D87D /* GoToMars */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68F9355825DC3A880090D87D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F9356A25DC3A930090D87D /* LaunchScreen.storyboard in Resources */,
+				68F9358725DC3EB20090D87D /* ITCKabelStd-Demi.otf in Resources */,
+				68F9356725DC3A930090D87D /* Preview Assets.xcassets in Resources */,
+				68DC90F125DC78BF00102F3F /* GoogleService-Info.plist in Resources */,
+				68F9356425DC3A930090D87D /* Assets.xcassets in Resources */,
+				68F9358825DC3EB20090D87D /* ITCKabelStd-Ultra.otf in Resources */,
+				68F9358925DC3EB20090D87D /* ITCKabelStd-Bold.otf in Resources */,
+				68F9358A25DC3EB20090D87D /* ITCKabelStd-Book.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F87755F2AE70CB0ADB3CE02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoToMars/Pods-GoToMars-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoToMars/Pods-GoToMars-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoToMars/Pods-GoToMars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D71F1F50A105E0A972E6DE78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoToMars-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68F9355625DC3A880090D87D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DC913325DD8CF000102F3F /* RocketDetaiViewModel.swift in Sources */,
+				68DC911725DC9F2700102F3F /* RocketPresenter.swift in Sources */,
+				68DC910A25DC9B3D00102F3F /* ServiceError.swift in Sources */,
+				68F9355E25DC3A880090D87D /* AppDelegate.swift in Sources */,
+				68DC912F25DD893900102F3F /* RocketDetailPresenters.swift in Sources */,
+				68F9356025DC3A880090D87D /* SceneDelegate.swift in Sources */,
+				68DC913625DD8DF800102F3F /* RocketDetailView.swift in Sources */,
+				68F9358425DC3EB20090D87D /* RegisterPageView.swift in Sources */,
+				68DC912825DCA3D300102F3F /* RocketModel.swift in Sources */,
+				68F9356225DC3A880090D87D /* ContentView.swift in Sources */,
+				68DC911425DC9F0C00102F3F /* RocketViewModel.swift in Sources */,
+				68DC910125DC828900102F3F /* RocketPageView.swift in Sources */,
+				68F9358325DC3EB20090D87D /* LoginPageView.swift in Sources */,
+				68F9358225DC3EB20090D87D /* KeyboardHandler.swift in Sources */,
+				68DC910E25DC9B9A00102F3F /* Service.swift in Sources */,
+				68F9358625DC3EB20090D87D /* ErrorLogin.swift in Sources */,
+				68DC911125DC9C2500102F3F /* Endpoint.swift in Sources */,
+				68DC911A25DCA03B00102F3F /* ListRockets.swift in Sources */,
+				68F9358525DC3EB20090D87D /* initPageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68F9356825DC3A930090D87D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68F9356925DC3A930090D87D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68F9356C25DC3A930090D87D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68F9356D25DC3A930090D87D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68F9356F25DC3A930090D87D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2A4AE9BBB8253A57001C96F /* Pods-GoToMars.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GoToMars/Preview Content\"";
+				DEVELOPMENT_TEAM = J4QKCQ68X6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GoToMars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jorge-Tapia.GoToMars";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		68F9357025DC3A930090D87D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431A4B0BA0834CD7566B3B63 /* Pods-GoToMars.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GoToMars/Preview Content\"";
+				DEVELOPMENT_TEAM = J4QKCQ68X6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GoToMars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jorge-Tapia.GoToMars";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68F9355525DC3A880090D87D /* Build configuration list for PBXProject "GoToMars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F9356C25DC3A930090D87D /* Debug */,
+				68F9356D25DC3A930090D87D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68F9356E25DC3A930090D87D /* Build configuration list for PBXNativeTarget "GoToMars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F9356F25DC3A930090D87D /* Debug */,
+				68F9357025DC3A930090D87D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68DC910425DC97E400102F3F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+		68DC912125DCA21A00102F3F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68DC910525DC97E400102F3F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68DC910425DC97E400102F3F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		68DC912225DCA21A00102F3F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68DC912125DCA21A00102F3F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 68F9355225DC3A880090D87D /* Project object */;
+}
